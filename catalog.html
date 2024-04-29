@@ -28,10 +28,18 @@
       >
         Produtos
       </h1>
+      <div class="modal-item">
+        <div class="full-picture"></div>
+        <div class="info-item"></div>
+        <button onclick="expandModal()" class="btn-close">
+          <img src="./assets/img/close.png" alt="botao X para fechar" />
+        </button>
+      </div>
       <div class="grid-product">
         <div
           class="item animate__animated animate__fadeInLeft animate__repeat-1 1 animate__slower 2s"
         >
+          <button onclick="expandModal()" class="btn-open">Ver mais</button>
           <div class="picture-item"></div>
           <div class="about-item">
             <h2>Camisa Street Lab</h2>
@@ -123,5 +131,6 @@
         <p><img src="./assets/img/o-email.png" alt="" /> streetlab@gmail.com</p>
       </div>
     </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
