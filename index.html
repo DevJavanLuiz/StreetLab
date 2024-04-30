@@ -2,86 +2,108 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Street Lab Bem-Vindos(a)</title>
-    <link rel="stylesheet" href="./assets/css/pagStart.css" />
+    <title>Street Lab</title>
+    <link rel="stylesheet" href="./assets/css/catalog.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
-
   <body>
-    <div class="header">
-      <!--Content before waves-->
-      <div class="inner-header flex">
+    <header>
+      <nav class="animate__animated animate__fadeInDown animate__repeat-1 1">
+        <a href="#product">Produtos</a>
         <img
           src="./assets/img/Pink Bold Retro Aesthetic Makeup Artist Circle Logo (1) (1).png"
           alt=""
-          class="animate__animated animate__fadeInDown animate__repeat-1 1"
-          style="width: 120px"
+          style="width: 60px"
         />
-        <h1 class="animate__animated animate__fadeInDown animate__repeat-1 1">
-          Seja Bem-Vindos(a) ao Street Lab
-        </h1>
-        <a
-          href="./catalog.html"
-          class="btn-welcome animate__animated animate__fadeInDown animate__repeat-1 1"
-          >Entrar</a
-        >
+        <a href="#contact">Contatos</a>
+      </nav>
+    </header>
+    <main>
+      <h1
+        class="animate__animated animate__fadeInLeft animate__repeat-1 1 animate__faste 800ms"
+      >
+        Produtos
+      </h1>
+      <div class="modal-flex">
+        <div class="modal-item">
+          <div class="full-picture"></div>
+          <div class="info-item">
+            <h2 class="name-product">Camisa Street Labs</h1>
+            <div class="colors">
+              <div class="color-product black"></div>
+              <div class="color-product white"></div>
+              <div class="color-product purple"></div>
+            </div>
+            <div class="sizes">
+              <div class="size-product">P</div>
+              <div class="size-product">M</div>
+              <div class="size-product">G</div>
+              <div class="size-product">GG</div>
+            </div>
+            <h3>Descrição</h2>
+            <p>
+              Camisa das ruas para deixar seu corre com estilo. Pano 100%
+              algodão com fibra de cabra kkk
+            </p>
+            <div class="talk-me">
+              <a href="#">Fale conosco!</a>
+            </div>
+          </div>
+          <button onclick="expandModal()" class="btn-close">
+            <img src="./assets/img/close.png" alt="botao X para fechar" />
+          </button>
+        </div>
       </div>
-
-      <!--Waves Container-->
-      <div>
-        <svg
-          class="waves"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 28"
-          preserveAspectRatio="none"
-          shape-rendering="auto"
+      <div class="grid-product">
+        <div
+          class="item animate__animated animate__fadeInLeft animate__repeat-1 1 animate__slower 2s"
         >
-          <defs>
-            <path
-              id="gentle-wave"
-              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-            />
-          </defs>
-          <g class="parallax">
-            <use
-              xlink:href="#gentle-wave"
-              x="48"
-              y="0"
-              fill="rgb(82, 210, 0)"
-            />
-            <use
-              xlink:href="#gentle-wave"
-              x="48"
-              y="3"
-              fill="rgb(79, 199, 0)"
-            />
-            <use
-              xlink:href="#gentle-wave"
-              x="48"
-              y="5"
-              fill="rgb(90, 252, 87)"
-              +
-            />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(124,252,0)" />
-          </g>
-        </svg>
-      </div>
-      <!--Waves end-->
-    </div>
-    <!--Header ends-->
+          <button onclick="expandModal()" class="btn-open">Ver mais</button>
+          <div class="picture-item"></div>
+          <div class="about-item">
+            <h2>Camisa Street Lab</h2>
+            <p>R$ 99.99</p>
+          </div>
+        </div>
+        <div
+          class="item animate__animated animate__fadeInLeft animate__repeat-1 1 animate__delay-1s"
+        >
+          <button onclick="expandModal()" class="btn-open">Ver mais</button>
 
-    <!--Content starts-->
-    <div class="content flex">
-      <p style="color: rgb(124, 252, 0)">
-        Be sure to subscribe Code With Arjun.
-      </p>
-    </div>
-    <!--Content ends-->
+          <div class="picture-item"></div>
+          <div class="about-item">
+            <h2>Camisa Street Lab</h2>
+            <p>R$ 99.99</p>
+          </div>
+        </div>
+        <div
+          class="item animate__animated animate__fadeInLeft animate__repeat-1 1 animate__delay-2s"
+        >
+          <div class="picture-item see-plus"></div>
+          <div class="about-item">
+            <h2>Em breve</h2>
+            <p>R$ 00.00</p>
+          </div>
+        </div>
+  
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="content-footer">
+        <p>
+          <img src="./assets/img/phone-call.png" alt="" /> +55 81 9 9999-9999
+        </p>
+        <p>
+          <img src="./assets/img/logotipo-do-instagram.png" alt="" /> @streetlab
+        </p>
+        <p><img src="./assets/img/o-email.png" alt="" /> streetlab@gmail.com</p>
+      </div>
+    </footer>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
