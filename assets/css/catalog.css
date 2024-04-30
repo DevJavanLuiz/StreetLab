@@ -91,6 +91,12 @@ main h1 {
   animation: picturePlus 5s infinite;
   animation-delay: 5s;
 }
+.see-plus {
+  background-image: url(/assets/img/em-breve.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .about-item {
   padding: 20px;
@@ -289,4 +295,136 @@ p {
   background: linear-gradient(45deg, rgb(124, 252, 0), rgb(62, 123, 0));
   border: 2px solid white;
   color: white;
+}
+
+/* RESPONSIVO */
+@media (width <= 576px) {
+  main h1 {
+    font-size: 26px;
+    margin-top: -10%;
+    width: 80vw;
+    padding: 0 10px 5px 20px;
+    margin-left: -20%;
+  }
+
+  .item {
+    width: 150px;
+    height: 230px;
+  }
+
+  .btn-open {
+    width: 60px;
+    font-size: 10px;
+    padding: 4px;
+    top: 200px;
+    left: 76px;
+  }
+
+  .about-item {
+    padding: 15px;
+    margin-top: -15px;
+  }
+  .about-item h2 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .about-item p {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+
+  .grid-product {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    margin-top: 40px;
+    margin-left: -2%;
+  }
+
+  /* FOOTER */
+
+  footer {
+    height: 20vh;
+    padding: 20px;
+    font-size: 13px;
+  }
+
+  footer img {
+    padding: 5px;
+    margin-right: 15px;
+    width: 30px;
+  }
+
+  /* Inpecionar item */
+
+  .modal-item {
+    width: 85vw;
+    display: grid;
+    right: 7%;
+    top: 10%;
+    height: 80vh;
+  }
+
+  .full-picture {
+    background-image: url(/assets/img/mirnus_masculino_camiseta_new_trip_preto_0111-e0d25d579d3ca5616416207437832025-640-0.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30vh;
+  }
+
+  .btn-close {
+    top: -35px;
+  }
+
+  .info-item {
+    padding: 15px;
+  }
+
+  .colors {
+    margin-bottom: 5%;
+  }
+
+  .color-product {
+    width: 23px;
+    height: 23px;
+    margin-left: 2px;
+    margin-right: 15px;
+  }
+
+  .sizes {
+    display: flex;
+    margin-bottom: 10%;
+  }
+
+  .size-product {
+    width: 35px;
+    height: 35px;
+    font-size: 12px;
+    margin-left: 2px;
+    margin-right: 15px;
+  }
+  .modal-flex h2 {
+    font-size: 25px;
+    margin-bottom: 8%;
+    margin-top: -15%;
+  }
+  .modal-flex h3 {
+    font-size: 20px;
+    margin-bottom: 2%;
+    margin-top: -5%;
+  }
+  .modal-flex p {
+    font-size: 13px;
+  }
+  .talk-me {
+    top: 90%;
+    right: 5%;
+  }
+
+  .talk-me a {
+    font-size: 13px;
+    padding: 9px 20px;
+    margin-top: 0px;
+  }
 }
