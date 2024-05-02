@@ -428,3 +428,7 @@ p {
     margin-top: 0px;
   }
 }
+
+@media (width >= 1200px){
+
+}
