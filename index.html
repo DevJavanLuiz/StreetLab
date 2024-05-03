@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Street Lab</title>
     <link rel="stylesheet" href="./assets/css/catalog.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+
   </head>
   <body>
     <header>
-      <nav class="animate__animated animate__fadeInDown animate__repeat-1 1">
+      <nav>
         <a href="#product">Produtos</a>
         <img
           src="./assets/img/Pink Bold Retro Aesthetic Makeup Artist Circle Logo (1) (1).png"
@@ -23,13 +20,11 @@
       </nav>
     </header>
     <main>
-      <h1
-        class="animate__animated animate__fadeInLeft animate__repeat-1 1 animate__faste 800ms"
-      >
+      <h1>
         Produtos
       </h1>
       <div class="modal-flex">
-        <div class="modal-item">
+        <div class="modal-item shirt-black">
           <div class="full-picture"></div>
           <div class="info-item">
             <h2 class="name-product">Camisa Street Labs</h1>
@@ -53,16 +48,46 @@
               <a href="#">Fale conosco!</a>
             </div>
           </div>
-          <button onclick="expandModal()" class="btn-close">
+          <button onclick="expandModalShirtBlack()" class="btn-close">
+            <img src="./assets/img/close.png" alt="botao X para fechar" />
+          </button>
+        </div>
+      </div>
+      <div class="modal-flex">
+        <div class="modal-item shirt-green">
+          <div class="full-picture"></div>
+          <div class="info-item">
+            <h2 class="name-product">Camisa Oversize</h1>
+            <div class="colors">
+              <div class="color-product black"></div>
+              <div class="color-product white"></div>
+              <div class="color-product purple"></div>
+            </div>
+            <div class="sizes">
+              <div class="size-product">P</div>
+              <div class="size-product">M</div>
+              <div class="size-product">G</div>
+              <div class="size-product">GG</div>
+            </div>
+            <h3>Descrição</h2>
+            <p>
+              Camisa das ruas para deixar seu corre com estilo. Pano 100%
+              algodão com fibra de cabra kkk
+            </p>
+            <div class="talk-me">
+              <a href="#">Fale conosco!</a>
+            </div>
+          </div>
+          <button onclick="expandModalShirtGreen()" class="btn-close">
             <img src="./assets/img/close.png" alt="botao X para fechar" />
           </button>
         </div>
       </div>
       <div class="grid-product">
         <div
-          class="item animate__animated animate__fadeInLeft animate__repeat-1 1 animate__slower 2s"
+          class="item i01"
         >
-          <button onclick="expandModal()" class="btn-open">Ver mais</button>
+          <button onclick="expandModalShirtBlack()" class="btn-open">Ver mais</button>
           <div class="picture-item"></div>
           <div class="about-item">
             <h2>Camisa Street Lab</h2>
@@ -70,9 +95,9 @@
           </div>
         </div>
         <div
-          class="item animate__animated animate__fadeInLeft animate__repeat-1 1 animate__delay-1s"
+          class="item i02"
         >
-          <button onclick="expandModal()" class="btn-open">Ver mais</button>
+          <button onclick="expandModalShirtGreen()" class="btn-open">Ver mais</button>
 
           <div class="picture-item"></div>
           <div class="about-item">
@@ -81,7 +106,7 @@
           </div>
         </div>
         <div
-          class="item animate__animated animate__fadeInLeft animate__repeat-1 1 animate__delay-2s"
+          class="item i03"
         >
           <div class="picture-item see-plus"></div>
           <div class="about-item">

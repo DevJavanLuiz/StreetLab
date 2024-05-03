@@ -6,6 +6,30 @@
   font-family: sans-serif;
 }
 
+@keyframes dropLeft {
+  0%{
+    opacity: 0;
+    transform: translateX(-600px);
+  }
+  60%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes dropBottom {
+  0%{
+    opacity: 0;
+    transform: translateY(-600px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -13,6 +37,7 @@ nav {
   padding: 7px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    animation: dropBottom 2s alternate;
 }
 
 nav a {
@@ -42,6 +67,7 @@ main h1 {
   color: rgb(100, 169, 31);
   box-shadow: rgb(124, 252, 0) 0px 2px 4px -2px;
   border-radius: 5px;
+  animation: dropLeft 2s;
 }
 
 .item {
@@ -51,6 +77,17 @@ main h1 {
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   cursor: pointer;
   position: relative;
+  animation: dropLeft alternate;
+}
+
+.i01{
+  animation-duration: 3s;
+}
+.i02{
+  animation-duration: 4s;
+}
+.i03{
+  animation-duration:5s;
 }
 
 .btn-open {
@@ -88,8 +125,11 @@ main h1 {
   height: 50%;
   cursor: pointer;
   transition: all 300ms ease-in-out;
-  animation: picturePlus 5s infinite;
   animation-delay: 5s;
+}
+
+.i02 .picture-item{
+  background-image: url(/assets/img/verde-limao--926x926.png);
 }
 .see-plus {
   background-image: url(/assets/img/em-breve.png);
@@ -167,6 +207,10 @@ footer img {
   box-shadow: rgba(124, 252, 0, 0.8) 0px -30px 70px -28px inset;
   height: 100%;
   position: relative;
+}
+
+.shirt-green .full-picture{
+background-image: url(/assets/img/verde-limao--926x926.png);
 }
 
 .btn-close {
@@ -430,5 +474,48 @@ p {
 }
 
 @media (width >= 1200px){
+  
+.item {
+  width: 270px;
+  height: 350px;
+}
+
+.btn-open {
+  top: 300px;
+  left: 170px;
+}
+
+.grid-product {
+  gap: 40px;
+  margin-left: 6%;
+}
+
+/* FOOTER */
+
+footer {
+  height: 35vh;
+}
+
+
+/* Inpecionar item */
+.modal-item {
+  max-width: 850px;
+  top: 90px;
+  height: 70vh;
+}
+
+
+.btn-close {
+  top: -40px;
+}
+.talk-me {
+  top: 90%;
+}
+
+.talk-me a {
+  font-size: 14px;
+  padding: 9px 20px;
+  margin-top: 0px;
+}
 
 }
