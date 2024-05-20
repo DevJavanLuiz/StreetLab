@@ -6,35 +6,49 @@
   font-family: sans-serif;
 }
 
+@keyframes infinitySlide {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 @keyframes dropLeft {
-  0%{
+  0% {
     opacity: 0;
     transform: translateX(-600px);
   }
-  60%{
+  60% {
     opacity: 0;
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateX(0px);
   }
 }
 @keyframes dropBottom {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(-600px);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateX(0px);
   }
 }
-body{
-  background-image: url(/assets/img/ACTUAL\ DESIGN\ -\ This\ is\ what\ we\ publish!\ \(1\).png);
+body {
+  background-image: url(/assets/img/Untitled\ design.png);
   background-position: center;
   background-size: contain;
 }
-
 nav {
   display: flex;
   align-items: center;
@@ -42,8 +56,8 @@ nav {
   padding: 5px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    animation: dropBottom 2s alternate;
-    background-color: white;
+  animation: dropBottom 2s alternate;
+  background-color: white;
 }
 
 nav a {
@@ -88,14 +102,14 @@ main h1 {
   background-color: white;
 }
 
-.i01{
+.i01 {
   animation-duration: 3s;
 }
-.i02{
+.i02 {
   animation-duration: 4s;
 }
-.i03{
-  animation-duration:5s;
+.i03 {
+  animation-duration: 5s;
 }
 
 .btn-open {
@@ -136,7 +150,7 @@ main h1 {
   animation-delay: 5s;
 }
 
-.i02 .picture-item{
+.i02 .picture-item {
   background-image: url(/assets/img/verde-limao--926x926.png);
 }
 .see-plus {
@@ -169,11 +183,13 @@ main h1 {
 /* FOOTER */
 
 footer {
-  height: 25vh;
+  height: 30vh;
   background-color: rgb(0, 0, 0);
   color: rgba(100, 169, 31, 0.478);
   padding: 40px;
   box-shadow: rgba(124, 252, 0, 0.8) 0px -30px 50px -28px inset;
+  position: absolute;
+  width: 100%;
 }
 
 footer img {
@@ -204,29 +220,28 @@ footer img {
   transition: all 300ms ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 0px 9000px 5000px;
   background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
 .full-picture {
-  background-image: url(/assets/img/mirnus_masculino_camiseta_new_trip_preto_0111-e0d25d579d3ca5616416207437832025-640-0.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 48%;
-  box-shadow: rgba(124, 252, 0, 0.8) 0px -30px 70px -28px inset;
-  height: 100%;
-  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  min-width: 450px;
 }
 
-.shirt-green .full-picture{
-background-image: url(/assets/img/verde-limao--926x926.png);
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .btn-close {
   border: 0;
   background-color: rgba(255, 255, 255, 0);
   position: absolute;
-  top: -80px;
-  right: 0;
+  top: 20px;
+  left: 20px;
   transition: all 100ms ease-in;
   cursor: pointer;
 }
@@ -349,7 +364,138 @@ p {
   color: white;
 }
 
+.slides {
+  display: flex;
+}
+
+.slide {
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+
+.slide img {
+  width: 570px;
+}
+.first img {
+  margin-left: -30px;
+}
+.manual-navigation {
+  position: absolute;
+  width: 400px;
+  margin-top: 7%;
+  display: flex;
+  margin-left: 8%;
+  justify-content: center;
+}
+
+.radio-btn {
+  display: none;
+}
+
+.manual-btn {
+  border: 2px solid rgb(124, 252, 0);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 120%;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 50px;
+}
+
+.manual-btn:hover {
+  background-color: rgb(124, 252, 0);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -500px;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -1120px;
+}
+
+.navigation-auto div {
+  border: 2px solid blue;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.navigation-auto {
+  position: absolute;
+  width: 400px;
+  display: flex;
+  margin-left: 8%;
+  justify-content: center;
+  top: 95.9%;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 50px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: rgb(124, 252, 0);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: rgb(124, 252, 0);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: rgb(124, 252, 0);
+}
 /* RESPONSIVO */
+
+@media (width <= 1200px) {
+  .item {
+    width: 270px;
+    height: 350px;
+  }
+
+  .btn-open {
+    top: 300px;
+    left: 170px;
+  }
+
+  .grid-product {
+    gap: 40px;
+    margin-left: 6%;
+  }
+
+  /* FOOTER */
+
+  footer {
+    height: 35vh;
+  }
+
+  /* Inpecionar item */
+  .modal-item {
+    max-width: 850px;
+    top: 90px;
+    height: 70vh;
+  }
+
+  .btn-close {
+    top: -40px;
+  }
+  .talk-me {
+    top: 90%;
+  }
+
+  .talk-me a {
+    font-size: 14px;
+    padding: 9px 20px;
+    margin-top: 0px;
+  }
+}
+
 @media (width <= 576px) {
   main h1 {
     font-size: 26px;
@@ -417,7 +563,6 @@ p {
   }
 
   .full-picture {
-    background-image: url(/assets/img/mirnus_masculino_camiseta_new_trip_preto_0111-e0d25d579d3ca5616416207437832025-640-0.jpg);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -426,7 +571,7 @@ p {
   }
 
   .btn-close {
-    top: -35px;
+    top: 20px;
   }
 
   .info-item {
@@ -479,51 +624,51 @@ p {
     padding: 9px 20px;
     margin-top: 0px;
   }
-}
 
-@media (width >= 1200px){
-  
-.item {
-  width: 270px;
-  height: 350px;
-}
+  .manual-btn {
+    border: 2px solid rgb(124, 252, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    margin-left: -6%;
+    margin-top: 31.8vh;
+  }
 
-.btn-open {
-  top: 300px;
-  left: 170px;
-}
+  .manual-btn:not(:last-child) {
+    margin-right: 52px;
+  }
 
-.grid-product {
-  gap: 40px;
-  margin-left: 6%;
-}
+  #radio1:checked ~ .first {
+    margin-left: -30px;
+  }
 
-/* FOOTER */
+  #radio2:checked ~ .first {
+    margin-left: -600px;
+  }
 
-footer {
-  height: 35vh;
-}
+  #radio3:checked ~ .first {
+    margin-left: -1180px;
+  }
 
+  .navigation-auto div {
+    border: 2px solid rgba(0, 0, 255, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+  }
 
-/* Inpecionar item */
-.modal-item {
-  max-width: 850px;
-  top: 90px;
-  height: 70vh;
-}
+  .navigation-auto {
+    position: absolute;
+    width: 400px;
+    display: flex;
+    margin-left: 5%;
+    justify-content: center;
+    top: 35vh;
+  }
 
-
-.btn-close {
-  top: -40px;
-}
-.talk-me {
-  top: 90%;
-}
-
-.talk-me a {
-  font-size: 14px;
-  padding: 9px 20px;
-  margin-top: 0px;
-}
-
+  .navigation-auto div:not(:last-child) {
+    margin-right: 29px;
+  }
 }

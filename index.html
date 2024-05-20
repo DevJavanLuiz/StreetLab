@@ -5,50 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Street Lab</title>
     <link rel="stylesheet" href="./assets/css/catalog.css" />
-
+    
   </head>
   <body>
     <header>
       <nav>
         <a href="#product">Produtos</a>
         <img
-          src="./assets/img/Pink Bold Retro Aesthetic Makeup Artist Circle Logo (1) (1).png"
-          alt=""
-          style="width: 60px"
+        src="./assets/img/Pink Bold Retro Aesthetic Makeup Artist Circle Logo (1) (1).png"
+        alt=""
+        style="width: 60px"
         />
         <a href="#contact">Contatos</a>
       </nav>
     </header>
     <main>
-      <div class="main-bg"></div>
       <h1>
         Produtos
       </h1>
+      <div class="main-bg"></div>
       <div class="modal-flex">
-        <div class="modal-item shirt-black">
-          <div class="full-picture"></div>
+
+
+        <div class="modal-item shirt-black slider">
+        
+          <div class="full-picture slides">
+            <input type="radio" class="radio-btn" name="radio" id="radio1">
+            <input type="radio" class="radio-btn" name="radio" id="radio2">
+            <input type="radio" class="radio-btn" name="radio" id="radio3">
+        
+            <div class="slide first">
+            <img src="./assets/img/mirnus_masculino_camiseta_new_trip_preto_0111-e0d25d579d3ca5616416207437832025-640-0.jpg" alt="Imagem 1" />
+            </div>
+
+            <div class="slide">
+              <img src="./assets/img/mirnus_masculino_camiseta_new_trip_preto_0111-e0d25d579d3ca5616416207437832025-640-0.jpg" alt="Imagem 1" />
+            </div>
+            
+            <div class="slide">
+            <img src="./assets/img/mirnus_masculino_camiseta_new_trip_preto_0111-e0d25d579d3ca5616416207437832025-640-0.jpg" alt="Imagem 1" />
+          </div>
+            
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3 "></div>
+            </div>
+
+          </div>
+
+     <div class="manual-navigation">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+     </div>
+
+
           <div class="info-item">
             <h2 class="name-product">Camisa Street Labs</h1>
-            <div class="colors">
-              <div class="color-product black"></div>
-              <div class="color-product white"></div>
-              <div class="color-product purple"></div>
-            </div>
-            <div class="sizes">
-              <div class="size-product">P</div>
-              <div class="size-product">M</div>
-              <div class="size-product">G</div>
-              <div class="size-product">GG</div>
-            </div>
-            <h3>Descrição</h2>
-            <p>
-              Camisa das ruas para deixar seu corre com estilo. Pano 100%
-              algodão com fibra de cabra kkk
-            </p>
-            <div class="talk-me">
-              <a href="#">Fale conosco!</a>
-            </div>
-          </div>
+              <div class="colors">
+                <div class="color-product black"></div>
+                <div class="color-product white"></div>
+                <div class="color-product purple"></div>
+              </div>
+              <div class="sizes">
+                <div class="size-product">P</div>
+                <div class="size-product">M</div>
+                <div class="size-product">G</div>
+                <div class="size-product">GG</div>
+              </div>
+              <h3>Descrição</h2>
+                <p>
+                  Camisa das ruas para deixar seu corre com estilo. Pano 100%
+                  algodão com fibra de cabra kkk
+                </p>
+                <div class="talk-me">
+                  <a href="#">Fale conosco!</a>
+                </div>
+              </div>
           <button onclick="expandModalShirtBlack()" class="btn-close">
             <img src="./assets/img/close.png" alt="botao X para fechar" />
           </button>
@@ -59,26 +93,26 @@
           <div class="full-picture"></div>
           <div class="info-item">
             <h2 class="name-product">Camisa Oversize</h1>
-            <div class="colors">
-              <div class="color-product black"></div>
-              <div class="color-product white"></div>
-              <div class="color-product purple"></div>
-            </div>
-            <div class="sizes">
-              <div class="size-product">P</div>
-              <div class="size-product">M</div>
-              <div class="size-product">G</div>
-              <div class="size-product">GG</div>
-            </div>
-            <h3>Descrição</h2>
-            <p>
-              Camisa das ruas para deixar seu corre com estilo. Pano 100%
-              algodão com fibra de cabra kkk
-            </p>
-            <div class="talk-me">
-              <a href="#">Fale conosco!</a>
-            </div>
-          </div>
+              <div class="colors">
+                <div class="color-product black"></div>
+                <div class="color-product white"></div>
+                <div class="color-product purple"></div>
+              </div>
+              <div class="sizes">
+                <div class="size-product">P</div>
+                <div class="size-product">M</div>
+                <div class="size-product">G</div>
+                <div class="size-product">GG</div>
+              </div>
+              <h3>Descrição</h2>
+                <p>
+                  Camisa das ruas para deixar seu corre com estilo. Pano 100%
+                  algodão com fibra de cabra kkk
+                </p>
+                <div class="talk-me">
+                  <a href="#">Fale conosco!</a>
+                </div>
+              </div>
           <button onclick="expandModalShirtGreen()" class="btn-close">
             <img src="./assets/img/close.png" alt="botao X para fechar" />
           </button>
@@ -86,20 +120,20 @@
       </div>
       <div class="grid-product">
         <div
-          class="item i01"
+        class="item i01"
         >
-          <button onclick="expandModalShirtBlack()" class="btn-open">Ver mais</button>
-          <div class="picture-item"></div>
-          <div class="about-item">
-            <h2>Camisa Street Lab</h2>
-            <p>R$ 99.99</p>
-          </div>
+        <button onclick="expandModalShirtBlack()" class="btn-open">Ver mais</button>
+        <div class="picture-item"></div>
+        <div class="about-item">
+          <h2>Camisa Street Lab</h2>
+          <p>R$ 99.99</p>
         </div>
-        <div
+      </div>
+      <div
           class="item i02"
-        >
+          >
           <button onclick="expandModalShirtGreen()" class="btn-open">Ver mais</button>
-
+          
           <div class="picture-item"></div>
           <div class="about-item">
             <h2>Camisa Street Lab</h2>
@@ -107,29 +141,30 @@
           </div>
         </div>
         <div
-          class="item i03"
+        class="item i03"
         >
-          <div class="picture-item see-plus"></div>
-          <div class="about-item">
-            <h2>Em breve</h2>
-            <p>R$ 00.00</p>
-          </div>
-        </div>
-  
+        <div class="picture-item see-plus"></div>
+        <div class="about-item">
+          <h2>Em breve</h2>
+          <p>R$ 00.00</p>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="content-footer">
-        <p>
-          <img src="./assets/img/phone-call.png" alt="" /> +55 81 9 9999-9999
-        </p>
-        <p>
-          <img src="./assets/img/logotipo-do-instagram.png" alt="" /> @streetlab
-        </p>
-        <p><img src="./assets/img/o-email.png" alt="" /> streetlab@gmail.com</p>
-      </div>
-    </footer>
-    <script src="./assets/js/main.js"></script>
+      
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="content-footer">
+    <p>
+      <img src="./assets/img/phone-call.png" alt="" /> +55 81 9 9999-9999
+    </p>
+    <p>
+      <img src="./assets/img/logotipo-do-instagram.png" alt="" /> @streetlab
+    </p>
+    <p><img src="./assets/img/o-email.png" alt="" /> streetlab@gmail.com</p>
+  </div>
+</footer>
+<script src="./assets/js/main.js"></script>
+
   </body>
 </html>
