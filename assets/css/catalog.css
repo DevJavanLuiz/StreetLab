@@ -625,50 +625,54 @@ p {
     margin-top: 0px;
   }
 
-  .manual-btn {
-    border: 2px solid rgb(124, 252, 0);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    margin-left: -6%;
-    margin-top: 31.8vh;
+  .manual-navigation {
+    margin-top: 11.2%;
+    margin-left: -8%;
   }
 
-  .manual-btn:not(:last-child) {
-    margin-right: 52px;
+  .manual-btn {
+    margin-top: 25.4vh;
+    padding: 4px;
   }
 
   #radio1:checked ~ .first {
-    margin-left: -30px;
+    margin-left: -80px;
   }
 
   #radio2:checked ~ .first {
-    margin-left: -600px;
+    margin-left: -650px;
   }
 
   #radio3:checked ~ .first {
-    margin-left: -1180px;
+    margin-left: -1220px;
+  }
+  #radio4:checked ~ .first {
+    margin-left: -80px;
+  }
+
+  #radio5:checked ~ .first {
+    margin-left: -650px;
+  }
+
+  #radio6:checked ~ .first {
+    margin-left: -1220px;
   }
 
   .navigation-auto div {
     border: 2px solid rgba(0, 0, 255, 0);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 2s;
+    padding: 4px;
   }
 
   .navigation-auto {
-    position: absolute;
-    width: 400px;
-    display: flex;
-    margin-left: 5%;
-    justify-content: center;
-    top: 35vh;
+    margin-left: -8%;
+    top: 31vh;
   }
 
   .navigation-auto div:not(:last-child) {
-    margin-right: 29px;
+    margin-right: 30px;
+  }
+
+  .manual-btn:not(:last-child) {
+    margin-right: 30px;
   }
 }
